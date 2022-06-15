@@ -1,0 +1,266 @@
+.progress-bar {
+  height: 3px;
+  width: 500%;
+  position: relative;
+  z-index: 10;
+  background-color: #55708d;
+}
+
+.progress-bar .progress {
+  position: relative;
+  height: 100%;
+  background-color: #cfd6dd;
+  -webkit-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.progress-bar .glow {
+  width: 60px;
+  max-width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.progress-bar .glow::before,
+.progress-bar .glow::after {
+  content: '';
+  display: block;
+  position: relative;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.progress-bar .glow::before {
+  background: transparent;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 10px #cfd6dd, 0px 0px 10px #081426;
+          box-shadow: 0px 0px 10px #cfd6dd, 0px 0px 10px #081426;
+  z-index: -5;
+}
+
+.progress-bar .glow::after {
+  background: -webkit-gradient(linear, left top, right top, from(#081426), to(transparent));
+  background: linear-gradient(to right, #081426 0%, transparent 100%);
+  height: calc(100% + 10px + 10px);
+  width: calc(100% + 10px);
+  top: -10px;
+  left: -10px;
+  z-index: -3;
+}
+
+.label {
+  font-family: Poppins;
+  color: white;
+  text-shadow: 0px 0px 2px #cfd6dd;
+  font-size: 24px;
+}
+
+.fill-1 {
+  -webkit-animation: fill-1 0.5s ease-out 0s;
+          animation: fill-1 0.5s ease-out 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-2 {
+  -webkit-animation: fill-2 0.5s ease-out 0.5s;
+          animation: fill-2 0.5s ease-out 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-3 {
+  -webkit-animation: fill-3 0.5s ease-out 1s;
+          animation: fill-3 0.5s ease-out 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-4 {
+  -webkit-animation: fill-4 0.5s ease-out 1.5s;
+          animation: fill-4 0.5s ease-out 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 0%;
+}
+
+.fill-5 {
+  -webkit-animation: fill-5 0.5s ease-out 2s;
+          animation: fill-5 0.5s ease-out 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 0%;
+}
+
+@-webkit-keyframes fill-1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes fill-1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes fill-2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes fill-2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes fill-3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes fill-3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes fill-4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes fill-4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes fill-5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes fill-5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.label.one {
+  -webkit-animation: label 0.5s ease-out 0s;
+          animation: label 0.5s ease-out 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.label.two {
+  -webkit-animation: label 0.5s ease-out 0.5s;
+          animation: label 0.5s ease-out 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.label.three {
+  -webkit-animation: label 0.5s ease-out 1.5s;
+          animation: label 0.5s ease-out 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.label.four {
+  -webkit-animation: label 0.5s ease-out 2.0s;
+          animation: label 0.5s ease-out 2.0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.label.five {
+  -webkit-animation: label 0.5s ease-out 2.5s;
+          animation: label 0.5s ease-out 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes label {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes label {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.wrapper .container {
+  padding: 10px;
+}
+
+.wrapper .container > * {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
